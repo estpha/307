@@ -1,0 +1,8 @@
+https://www.zeldadungeon.net/breath-of-the-wild-interactive-map/?z=0&x=48&y=0 --> MAP
+https://www.ign.com/maps/the-legend-of-zelda-breath-of-the-wild/hyrule --> MAP
+--> si arrive pas à mettre les 2 maps au-dessus mettre 1 map où vend le jeu
+
+dossier local --> token et autres indication
+
+https://gadhagod.github.io/Hyrule-Compendium-API/#/ --> documentation
+
