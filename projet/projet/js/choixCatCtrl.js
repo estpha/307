@@ -8,7 +8,11 @@ class ChoixCat {
     // Ajouter un écouteur. On est obligé de le faire là car l'objet n'est pas connu dans le html si on le fait directement dans l'html
     $("#btnCreatures").click(() => {
       // charger la vue demandee
-      $("#").load("views/creatures.html");
+      $("#creatures").load("views/creatures.html");
+      // si une fonction de callback est spécifiée, on l'appelle ici
+      if (typeof callback !== "undefined") {
+        callback();
+      }
     });
     /*$("#btnEquipement").click(() => {
       // charger la vue demandee
