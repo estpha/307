@@ -10,6 +10,7 @@ $().ready(function () {
   http = new HttpService();
   indexCtrl = new IndexCtrl();  // ctrl principal
   http.centraliserErreurHttp(indexCtrl.afficherErreurHttp);
+  api = new APICtrl();
 });
 
 class IndexCtrl {
@@ -18,6 +19,7 @@ class IndexCtrl {
   constructor() {
     vue = new VueService();
     this.loadChoixCat();
+   
   }
 
   afficherErreurHttp(msg) {
@@ -26,7 +28,7 @@ class IndexCtrl {
 
   // avec arrow function
   loadChoixCat() {
-    vue.chargerVue("choixCat", () => new ChoixCat());
+    vue.chargerVue("choixCat", () => new ChoixCatCtrl());
   }
 
   /* avec function classique
