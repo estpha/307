@@ -1,7 +1,7 @@
 /*
-  But :     
-  Auteur : prénom + nom
-  Date :   jj.mm.aaaa / V1.0
+  But :    index des ctrls 
+  Auteur : esther pham
+  Date :   11.06.2023 / V1.0
 */
 
 $().ready(function () {
