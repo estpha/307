@@ -5,7 +5,7 @@
 */
 class CreaturesCtrl {
   constructor() {
-
+    this.afficheInfos();
   }
 
   afficheInfos() {
@@ -13,7 +13,7 @@ class CreaturesCtrl {
       $("#image").attr("src", function getImg() {
         $.ajax({
           type: "GET",
-          url: "https://botw-compendium.herokuapp.com/api/v2/entry/white-maned_lynel/image",
+          url: "https://botw-compendium.herokuapp.com/api/v2/",
           data: { "": httpNonAccessibleFilePath },
           success: function (imageData) {
             $("#image").attr('<img src="' + imageData + '" />');

@@ -6,14 +6,17 @@
 
 $().ready(function () {
   // service et indexCtrl sont des variables globales qui doivent être accessible depuis partout => pas de mot clé devant ou window.xxx
+  vue = null;
   http = new HttpService();
   indexCtrl = new IndexCtrl();  // ctrl principal
   http.centraliserErreurHttp(indexCtrl.afficherErreurHttp);
 });
 
 class IndexCtrl {
+
+  
   constructor() {
-    this.vue = new VueService();
+    vue = new VueService();
     this.loadChoixCat();
   }
 
@@ -23,7 +26,7 @@ class IndexCtrl {
 
   // avec arrow function
   loadChoixCat() {
-    this.vue.chargerVue("choixCat", () => new ChoixCat());
+    vue.chargerVue("choixCat", () => new ChoixCat());
   }
 
   /* avec function classique
