@@ -5,25 +5,14 @@
 */
 class ChoixCat {
   constructor() {
-    // Ajouter un écouteur. On est obligé de le faire là car l'objet n'est pas connu dans le html si on le fait directement dans l'html
-    $("#btnCreatures").click(() => {
-      // charger la vue demandee
-      $("#creatures").load("views/creatures.html");
-      // si une fonction de callback est spécifiée, on l'appelle ici
-      if (typeof callback !== "undefined") {
-        callback();
-      }
-    });
-    /*$("#btnEquipement").click(() => {
-      // charger la vue demandee
-      $("#view").load("views/equipements.html", function () {
+    this.chargementPage();
+  };
 
-        // si une fonction de callback est spécifiée, on l'appelle ici
-        if (typeof callback !== "undefined") {
-          callback();
-        }
-
-      });
-    });*/
+  chargementPage() {
+    $("#btnCreatures").click(function openCreatures() {
+      // charger la vue demandee
+      this.vue.chargerVue("CreaturesCtrl", () => new CreaturesCtrl());
+      console.log("oui");
+    })
   }
 }

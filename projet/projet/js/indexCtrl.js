@@ -22,7 +22,7 @@ class IndexCtrl {
   }
 
   // avec arrow function
-  loadLogin() {
+  loadChoixCat() {
     this.vue.chargerVue("choixCat", () => new ChoixCat());
   }
 
