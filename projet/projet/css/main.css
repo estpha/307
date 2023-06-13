@@ -42,6 +42,7 @@ h1 {
   display: flex;
   background-color: #d8c09b;
   padding: 2%;
+  border-radius: 20px;
 }
 img{
   margin-right: 2%;
