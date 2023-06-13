@@ -10,7 +10,6 @@ body {
 #container {
   background-color: #86a5a9;
   width: 90%;
-  padding: 1em;
   border: 1px solid black;
   margin: auto;
   font-family: Verdana, Arial, serif;
@@ -21,8 +20,12 @@ h1 {
 }
 #choixCat {
   margin-top: 5%;
-  margin-left: 5%;
-  margin-bottom: 5%;
+  margin-left: 1em;
+  margin-bottom: 5%;  
+}
+#miseEnFormeBtn{
+  display: flex;
+  gap: 2.5em;
 }
 .choixCatBtn{
   background-color: #9abcc0;
@@ -31,7 +34,7 @@ h1 {
   width: 80%;
   margin-top: 10%;
 }
-#creaturesListe{
+.listes{
   margin: 2%;
 }
 .miseEnForme{
@@ -39,12 +42,28 @@ h1 {
   display: flex;
   background-color: #d8c09b;
   padding: 2%;
-  border: ;
 }
 img{
   margin-right: 2%;
 }
 .retourChoixCat{
+  background-color: #eed8bb;
+  color: black;
+  border: solid;
+  border-width: 1px;
+}
+footer{
+  display: flex;
+}
+.imgFooterChoix{
   width: 10%;
-  
+  bottom: 0;
+  left: 0;
+  margin-top: 1em;
+}
+#choixCat{
+  margin-bottom: 1em;
+}
+#auteur{
+  margin-top: 5em;
 }

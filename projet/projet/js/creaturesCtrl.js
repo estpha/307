@@ -16,7 +16,6 @@ class CreaturesCtrl {
       this.creaturesJson = data;
       this.afficheInfos();
     }));
-
   }
   afficheInfos() {
 

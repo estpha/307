@@ -15,11 +15,10 @@ $().ready(function () {
 
 class IndexCtrl {
 
-  
+
   constructor() {
     vue = new VueService();
     this.loadChoixCat();
-   
   }
 
   afficherErreurHttp(msg) {
@@ -30,17 +29,4 @@ class IndexCtrl {
   loadChoixCat() {
     vue.chargerVue("choixCat", () => new ChoixCatCtrl());
   }
-
-  /* avec function classique
-  loadAccueil(langue) {
-    this.vue.chargerVue("accueil", function () {
-      new AccueilCtrl(langue);
-    });
-  }
-
-  loadCompte() {
-    this.vue.chargerVue("compte", function () {
-      new CompteCtrl();
-    });
-  }*/
 }
