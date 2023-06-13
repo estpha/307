@@ -16,11 +16,9 @@ class ChoixCatCtrl {
         height: 'toggle'
       }, "fast");
     });
-    $(".choixCatBtn").hover(function(){ 
-      $(this).animate({marginLeft: 10, marginRight: 0}); 
-    }, function(){ 
-      $(this).animate({marginLeft: 10, marginRight: 12}); 
-    });
+    /*$(".choixCatBtn").hover(function(){ 
+      $(this).animate({width: '30em'});
+    });*/
   };
 
   listeCreatures() {

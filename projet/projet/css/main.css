@@ -13,19 +13,19 @@ body {
   border: 1px solid black;
   margin: auto;
   font-family: Verdana, Arial, serif;
+  align-items: center;
 }
 h1 {
   text-align: center;
   color: black;
 }
 #choixCat {
-  margin-top: 5%;
-  margin-left: 1em;
-  margin-bottom: 5%;  
+  margin: auto;
+  width: 80%;  
 }
 #miseEnFormeBtn{
   display: flex;
-  gap: 2.5em;
+  gap: 1em;
 }
 .choixCatBtn{
   background-color: #9abcc0;
@@ -65,5 +65,11 @@ footer{
   margin-bottom: 1em;
 }
 #auteur{
-  margin-top: 5em;
+  margin-top: 4.5em;
+}
+.choixCatBtn{
+  transition: all 0.4s;
+}
+.choixCatBtn:hover{
+  transform: scale(1.09);
 }
