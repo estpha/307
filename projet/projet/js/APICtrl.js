@@ -7,7 +7,7 @@ class APICtrl {
 
     constructor() {
     }
-
+    //récupère toutes les données se trouvant dans la catégorie creatures de l'API
     getCreatures(successCallback) {
         $.ajax({
             type: "GET",
@@ -15,7 +15,7 @@ class APICtrl {
             success: successCallback
         });
     }
-
+    //récupère toutes les données se trouvant dans la catégorie equipment de l'API
     getEquipement(successCallback) {
         $.ajax({
             type: "GET",
@@ -23,7 +23,7 @@ class APICtrl {
             success: successCallback
         });
     }
-
+    //récupère toutes les données se trouvant dans la catégorie materials de l'API
     getMateriels(successCallback) {
         $.ajax({
             type: "GET",
@@ -31,7 +31,7 @@ class APICtrl {
             success: successCallback
         });
     }
-
+    //récupère toutes les données se trouvant dans la catégorie monsters de l'API
     getMonstres(successCallback) {
         $.ajax({
             type: "GET",
@@ -39,7 +39,7 @@ class APICtrl {
             success: successCallback
         });
     }
-
+    //récupère toutes les données se trouvant dans la catégorie treasure de l'API
     getTresor(successCallback) {
         $.ajax({
             type: "GET",

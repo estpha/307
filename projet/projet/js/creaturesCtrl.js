@@ -4,19 +4,21 @@
   Date :   11.06.2023 / V1.0
 */
 class CreaturesCtrl {
-
+  //création d'une variable globale utile pour les données de l'API
   creaturesJson;
 
   constructor(api) {
+    //met un écouteur sur le bouton qui permet de retourner à la page permettant de choisir les différentes catégories
     $(".retourChoixCat").click(() => {
       this.loadChoixCat();
-    });
-    this.creaturesJson = null;
+    })
+    //récupération des données des créatures
     api.getCreatures(((data) => {
       this.creaturesJson = data;
       this.afficheInfos();
     }));
   }
+  //méthode permettant de lister les créatures
   afficheInfos() {
 
     //console.log(this.creaturesJson.data.food);
@@ -46,6 +48,7 @@ class CreaturesCtrl {
       );
     });
   }
+  //chargement de la page d'accueil
   loadChoixCat() {
     indexCtrl.loadChoixCat();
   }

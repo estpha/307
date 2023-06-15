@@ -2,6 +2,7 @@
  * Couche de services HTTP (worker). 
  *
  * @author Jean-Claude Stritt / modif P-A Mettraux
+ * code récupéré de l'exercice 20
  */
 class HttpService {
   constructor() {}

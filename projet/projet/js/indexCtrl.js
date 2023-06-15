@@ -25,7 +25,7 @@ class IndexCtrl {
     alert(msg);
   }
 
-  // avec arrow function
+  //chargement de la page d'accueil
   loadChoixCat() {
     vue.chargerVue("choixCat", () => new ChoixCatCtrl());
   }
